@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_gray10"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:id="@+id/tv_lable"
+        android:paddingRight="10dp"
+        android:text="大1.5匹"
+        android:textColor="@color/black"
+        android:textSize="10dp" />
+</LinearLayout>

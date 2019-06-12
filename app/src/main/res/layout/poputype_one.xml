@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77000000"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/v_pop_divider_top"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/xian" />
+
+    <ListView
+        android:id="@+id/list_popu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:dividerHeight="1px"
+        android:paddingLeft="10dp"
+        android:listSelector="@color/white"
+        android:divider="@color/xian"
+        android:paddingRight="10dp"
+        android:scrollbars="none"></ListView>
+
+
+    <View
+        android:id="@+id/v_pop_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+</LinearLayout>

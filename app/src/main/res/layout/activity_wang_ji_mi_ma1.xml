@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_wang_ji_mima1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+  >
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            style="@style/Font14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手  机" />
+
+        <EditText
+            android:id="@+id/ed_phone"
+            style="@style/Font14_hui2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="请输入你的手机号"
+            android:inputType="phone"
+            android:background="@color/white"
+            android:maxLength="11"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/xian"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:layout_marginRight="15dp"
+        >
+
+        <TextView
+            style="@style/Font14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码" />
+
+        <EditText
+            android:id="@+id/ed_yzm"
+            style="@style/Font14_hui2"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:hint="请输入你的手机号"
+            android:background="@color/white"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingLeft="10dp" />
+        <TextView
+            android:id="@+id/tv_getyzm"
+            style="@style/Font12_white"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_round_blue_15"
+            android:gravity="center"
+            android:text="获取验证码" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/xian"/>
+    <Button
+        android:id="@+id/bt_wangjmima"
+        style="@style/Font15_white"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/loginbt"
+        android:text="下一步" />
+</LinearLayout>

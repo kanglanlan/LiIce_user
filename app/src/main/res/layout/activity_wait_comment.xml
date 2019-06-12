@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/title"></include>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/ll_top"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+               android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/img_head_wc"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/moren"
+                   />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_title_mc"
+                        style="@style/Font14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       />
+
+                    <TextView
+                        android:id="@+id/tv_note_wc"
+                        style="@style/Font12_hui2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                    />
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:paddingTop="10dp">
+
+                        <TextView
+                            style="@style/Font15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="师傅态度"/>
+
+                        <com.willy.ratingbar.ScaleRatingBar
+                            android:id="@+id/ratbar01_mc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            app:srb_clearRatingEnabled="true"
+                            app:srb_clickable="true"
+                            app:srb_drawableEmpty="@mipmap/ico_mfxx_46"
+                            app:srb_drawableFilled="@mipmap/ico_mfxx_45"
+                            app:srb_isIndicator="false"
+                            app:srb_minimumStars="0"
+                            app:srb_numStars="5"
+                            app:srb_rating="0"
+                            app:srb_scrollable="true"
+                            app:srb_starHeight="20dp"
+                            app:srb_starPadding="1dp"
+                            app:srb_starWidth="20dp"
+                            app:srb_stepSize="5">
+                        </com.willy.ratingbar.ScaleRatingBar>
+                    </LinearLayout>
+
+                    <include layout="@layout/xian"></include>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:paddingTop="10dp">
+
+                        <TextView
+                            style="@style/Font15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="安装效率"/>
+
+                        <com.willy.ratingbar.ScaleRatingBar
+                            android:id="@+id/ratbar02_mc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            app:srb_clearRatingEnabled="true"
+                            app:srb_clickable="true"
+                            app:srb_drawableEmpty="@mipmap/ico_mfxx_46"
+                            app:srb_drawableFilled="@mipmap/ico_mfxx_45"
+                            app:srb_isIndicator="false"
+                            app:srb_minimumStars="0"
+                            app:srb_numStars="5"
+                            app:srb_rating="0"
+                            app:srb_scrollable="true"
+                            app:srb_starHeight="20dp"
+                            app:srb_starPadding="1dp"
+                            app:srb_starWidth="20dp"
+                            app:srb_stepSize="5">
+                        </com.willy.ratingbar.ScaleRatingBar>
+                    </LinearLayout>
+
+                    <include layout="@layout/xian"></include>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:paddingTop="10dp">
+
+                        <TextView
+                            style="@style/Font15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="送货速度"/>
+
+                        <com.willy.ratingbar.ScaleRatingBar
+                            android:id="@+id/ratbar03_mc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            app:srb_clearRatingEnabled="true"
+                            app:srb_clickable="true"
+                            app:srb_drawableEmpty="@mipmap/ico_mfxx_46"
+                            app:srb_drawableFilled="@mipmap/ico_mfxx_45"
+                            app:srb_isIndicator="false"
+                            app:srb_minimumStars="0"
+                            app:srb_numStars="5"
+                            app:srb_rating="0"
+                            app:srb_scrollable="true"
+                            app:srb_starHeight="20dp"
+                            app:srb_starPadding="1dp"
+                            app:srb_starWidth="20dp"
+                            app:srb_stepSize="5">
+                        </com.willy.ratingbar.ScaleRatingBar>
+                    </LinearLayout>
+
+                    <include layout="@layout/xian"></include>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edit_comment_mc"
+                    style="@style/Font13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:hint="评论大于10个字就有机会送积分~"
+                    android:maxLength="@integer/pjlength"
+                    android:minHeight="120dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"/>
+
+                <com.meida.MyView.CustomGridView
+                    android:id="@+id/gv_mc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="4"
+                    android:verticalSpacing="5dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btn_pay_mc"
+        style="@style/Font16_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_round_blue_5"
+        android:text="提交"/>
+
+</LinearLayout>

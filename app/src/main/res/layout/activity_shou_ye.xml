@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_shou_ye"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.meida.liice.ShouYeActivity">
+
+    <TextView
+        android:id="@+id/tv_kankan"
+        style="@style/Font13_hui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/jt"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:paddingTop="@dimen/toolbar_padding_top"
+        android:text="随便看看" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ico_lb001" />
+
+    <Button
+        android:id="@+id/tv_zhuce"
+        style="@style/Font15_white"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/logincehng"
+        android:text="新人注册" />
+
+    <Button
+        android:id="@+id/tv_denglu"
+        style="@style/Font15_white"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/loginbt"
+        android:text="手机号码登录" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1px"
+            android:background="@color/bg" />
+
+        <TextView
+            style="@style/Font12_hui2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="快捷登录" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1px"
+            android:background="@color/bg" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:id="@+id/tv_weixin"
+            android:drawableTop="@mipmap/ico_lb061"
+            style="@style/Font13_hui"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QQ"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:id="@+id/tv_ww"
+            android:drawableTop="@mipmap/ico_lb062"
+            style="@style/Font13_hui"/>
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+</LinearLayout>

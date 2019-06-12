@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/Font13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="已和客户进行了接洽合作" />
+
+    <com.meida.MyView.CustomGridView
+        android:id="@+id/gv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="10dp"
+        android:listSelector="@color/white"
+        android:numColumns="3"
+        android:padding="10dp"
+        android:verticalSpacing="10dp"></com.meida.MyView.CustomGridView>
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/Font12_hui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="2018-03-26" />
+
+    <include layout="@layout/xiantwo" />
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_padding_top"
+        android:background="@color/main" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/main">
+        <ImageView
+            android:id="@+id/img_title_back"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:clickable="true"
+            android:onClick="back"
+            android:visibility="gone"
+            android:padding="12dp"
+            android:src="@drawable/headback_icon" />
+        <TextView
+            style="@style/Font17_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我要推荐" />
+
+        <ImageView
+            android:id="@+id/img_shar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:padding="12dp"
+            android:src="@mipmap/ico_lb035" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_s"
+            android:background="@drawable/baibt"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/moren" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/share_tit"
+                    style="@style/Font13_hui2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="100dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:text="立冰补贴" />
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    style="@style/Font13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/share_tit"
+                    android:layout_below="@+id/share_tit"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginRight="105dp"
+                    android:text="下载立冰补贴商城送积分" />
+
+                <ImageView
+                    android:id="@+id/img_erweima"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/moren" />
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_change"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                style="@style/Font13_hui2"
+                android:drawableTop="@mipmap/ico_lb036"
+                android:gravity="center"
+                android:text="更换模板" />
+
+            <TextView
+                android:id="@+id/tv_xiazai"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/Font13_hui2"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/ico_lb037"
+                android:gravity="center"
+                android:text="保存图片" />
+
+
+        </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

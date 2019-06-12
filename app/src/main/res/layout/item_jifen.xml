@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+   >
+
+    <ImageView
+        android:id="@+id/img_jifen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/moren" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/Font14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="电饭煲" />
+
+    <TextView
+        android:id="@+id/tv_duihuan"
+        style="@style/Font12_hui2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="兑换积分：0分" />
+
+    <TextView
+        android:id="@+id/tv_butie"
+        style="@style/Font12_hui2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="补贴积分：0分" />
+</LinearLayout>

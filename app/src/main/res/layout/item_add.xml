@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/xian_3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_add_name"
+            style="@style/Font14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="张三" />
+
+        <TextView
+            android:id="@+id/tv_add_phone"
+            style="@style/Font14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13869542369" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_add_add"
+        style="@style/Font12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:text="深圳市福田区滨河大道南侧田区滨河大道南侧" />
+
+    <include layout="@layout/xiantwo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <RadioButton
+            android:id="@+id/rb_moren"
+            style="@style/Font13_hui2"
+            android:layout_width="wrap_content"
+            android:checked="false"
+            android:drawableLeft="@drawable/cb_add"
+            android:drawablePadding="5dp"
+            android:button="@null"
+            android:layout_height="wrap_content"
+            android:text="默认地址" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_bianji"
+            style="@style/Font13_hui2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/ico_lb042"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="编辑" />
+
+        <TextView
+            android:id="@+id/tv_shanchu"
+            style="@style/Font13_hui2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@mipmap/ico_lb043"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="删除" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_zhuan_zeng_jifen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context=".ZhuanZengJifenActivity">
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Font14_hui2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="累计积分收入：" />
+
+            <TextView
+                android:id="@+id/tv_leiji"
+                style="@style/Font15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Font14_hui2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="累计已转赠积分：" />
+
+            <TextView
+                android:id="@+id/tv_zuanzeng"
+                style="@style/Font15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Font14_hui2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前可转赠积分：" />
+
+            <TextView
+                android:id="@+id/tv_kezuanzeng"
+                style="@style/Font15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+        </LinearLayout>
+
+        <include layout="@layout/xiantwo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/Font14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获赠人ID" />
+
+            <EditText
+                android:id="@+id/et_id"
+                style="@style/Font14_hui2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:background="@color/white"
+                android:hint="请输入获赠人ID"
+                android:paddingLeft="15dp" />
+
+
+        </LinearLayout>
+
+        <include layout="@layout/xiantwo" />
+
+        <TextView
+            style="@style/Font12_hui2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="本次转赠积分" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/qian"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/et_qian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:hint="请输入积分"
+                android:paddingLeft="10dp"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:id="@+id/img_del"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="18dp"
+                android:src="@mipmap/ico_lb090" />
+        </LinearLayout>
+
+        <include layout="@layout/xiantwo" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_zhuanzeng"
+        style="@style/Font15_white"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/loginbt"
+        android:gravity="center"
+        android:text="确认转赠" />
+</LinearLayout>

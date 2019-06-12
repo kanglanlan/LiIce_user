@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:paddingTop="@dimen/toolbar_padding_top"
+    android:layout_height="match_parent" >
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:onClick="back"
+        android:padding="10dp"
+        android:src="@drawable/left_02" />
+    <com.meida.photoview.demo.HackyViewPager
+        android:id="@+id/hv_imagepager_img"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="match_parent"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/tv_imagepager_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/transparent" />
+
+
+</FrameLayout>

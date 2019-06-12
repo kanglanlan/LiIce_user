@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#aa000000"
+    android:gravity="center"
+ >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:gravity="center"
+    android:background="@drawable/baibt"
+    >
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ico_lb099" />
+
+    <TextView
+        style="@style/Font14"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="软件更新提示" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/Font14_hui"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ellipsize="end"
+        android:maxLines="5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_quxiao"
+            style="@style/Font15_white"
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/huibt"
+            android:gravity="center"
+            android:text="取消"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_gengxin"
+            style="@style/Font15_white"
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/loginbt"
+            android:gravity="center"
+            android:text="下载更新" />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

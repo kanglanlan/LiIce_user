@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_bao_xiu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context="com.meida.liice.AddBaoXiuActivity">
+
+    <include layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/Font14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报修人姓名" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    style="@style/Font14_hui2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/white"
+                    android:hint="请输入报修人姓名"
+                    android:maxLength="20" />
+            </LinearLayout>
+
+            <include layout="@layout/xian_4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/Font14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报修人电话" />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    style="@style/Font14_hui2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/white"
+                    android:hint="请输入报修人电话"
+                    android:inputType="phone"
+                    android:maxLength="11" />
+            </LinearLayout>
+
+            <include layout="@layout/xian_3" />
+
+            <LinearLayout
+                android:id="@+id/ll_time"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/Font14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上门时间" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/Font14_hui2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/icon_youlight"
+                    android:gravity="right"
+                    android:hint="选择上门时间" />
+            </LinearLayout>
+
+            <include layout="@layout/xian_4" />
+
+            <LinearLayout
+                android:id="@+id/ll_add"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/Font14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报修地址" />
+
+                <TextView
+                    android:id="@+id/tv_add"
+                    style="@style/Font14_hui2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/icon_youlight"
+                    android:gravity="right"
+                    android:hint="请选择" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_xxadd"
+                style="@style/Font14_hui2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:hint="请输入报修详细地址"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true" />
+
+            <include layout="@layout/xian_4" />
+
+            <TextView
+                style="@style/Font14"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="备注" />
+
+            <EditText
+                android:id="@+id/et_miaoshu"
+                style="@style/Font14_hui2"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/white"
+                android:gravity="top"
+                android:hint="故障描述"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <com.meida.MyView.CustomGridView
+                android:id="@+id/gv_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="10dp"
+                android:numColumns="4"
+                android:padding="10dp"
+                android:listSelector="@color/white"
+                android:verticalSpacing="10dp"></com.meida.MyView.CustomGridView>
+
+            <TextView
+                style="@style/Font12_hui2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingBottom="15dp"
+                android:text="最多上传9张图片" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bt_tijiao"
+        style="@style/Font15_white"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/loginbt"
+        android:text="提交报修申请" />
+</LinearLayout>

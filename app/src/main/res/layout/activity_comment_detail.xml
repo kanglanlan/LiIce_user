@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/title"></include>
+
+    <android.support.v4.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="20dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/img_head_cd"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ico_lb084"
+                    app:riv_oval="true"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name_cd"
+                        style="@style/Font15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"/>
+
+                    <TextView
+                        android:id="@+id/tv_time_cd"
+                        style="@style/Font11_hui"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:text="time"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        style="@style/Font15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="师傅态度"/>
+
+                    <com.willy.ratingbar.ScaleRatingBar
+
+                        android:id="@+id/ratbar01_mc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        app:srb_clearRatingEnabled="true"
+                        app:srb_clickable="false"
+                        app:srb_drawableEmpty="@mipmap/ico_mfxx_45"
+                        app:srb_drawableFilled="@mipmap/ico_mfxx_45"
+                        app:srb_isIndicator="false"
+                        app:srb_minimumStars="1"
+                        app:srb_numStars="5"
+                        app:srb_scrollable="false"
+                        app:srb_starHeight="20dp"
+                        app:srb_starPadding="1dp"
+                        app:srb_starWidth="20dp"
+                        app:srb_stepSize="5">
+                    </com.willy.ratingbar.ScaleRatingBar>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        style="@style/Font15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="安装效率"/>
+
+                    <com.willy.ratingbar.ScaleRatingBar
+                        android:id="@+id/ratbar02_mc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        app:srb_clearRatingEnabled="true"
+                        app:srb_clickable="false"
+                        app:srb_drawableEmpty="@mipmap/ico_mfxx_45"
+                        app:srb_drawableFilled="@mipmap/ico_mfxx_45"
+                        app:srb_isIndicator="false"
+                        app:srb_minimumStars="1"
+                        app:srb_numStars="5"
+                        app:srb_scrollable="false"
+                        app:srb_starHeight="20dp"
+                        app:srb_starPadding="1dp"
+                        app:srb_starWidth="20dp"
+                        app:srb_stepSize="5">
+                    </com.willy.ratingbar.ScaleRatingBar>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    >
+
+                    <TextView
+                        style="@style/Font15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="进货速度"/>
+
+                    <com.willy.ratingbar.ScaleRatingBar
+                        android:id="@+id/ratbar03_mc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        app:srb_clearRatingEnabled="true"
+                        app:srb_clickable="false"
+                        app:srb_drawableEmpty="@mipmap/ico_mfxx_45"
+                        app:srb_drawableFilled="@mipmap/ico_mfxx_45"
+                        app:srb_isIndicator="false"
+                        app:srb_minimumStars="1"
+                        app:srb_numStars="5"
+                        app:srb_scrollable="false"
+                        app:srb_starHeight="20dp"
+                        app:srb_starPadding="1dp"
+                        app:srb_starWidth="20dp"
+                        app:srb_stepSize="5">
+                    </com.willy.ratingbar.ScaleRatingBar>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/xian"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"></include>
+
+            <TextView
+                android:id="@+id/tv_note_cd"
+                style="@style/Font15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="备注"/>
+            <!--故障图-->
+            <com.meida.MyView.ninelayout.NineGridlayout
+                android:id="@+id/lay_nine_cd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+            </com.meida.MyView.ninelayout.NineGridlayout>
+
+            <TextView
+                android:id="@+id/tv_del_cd"
+                style="@style/Font13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="删除"
+                android:textColor="@color/blue"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

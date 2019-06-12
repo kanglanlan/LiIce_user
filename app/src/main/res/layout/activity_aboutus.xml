@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_aboutus"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context="com.meida.liice.AboutusActivity">
+
+    <include layout="@layout/title" />
+
+    <TextView
+        android:id="@+id/tv_banben"
+        style="@style/Font14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:drawablePadding="10dp"
+        android:drawableTop="@mipmap/ico_lb101"
+        android:gravity="center"
+        android:text="立冰补贴" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/Font14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="微信公众号" />
+
+            <TextView
+                android:id="@+id/tv_gongzhognhao"
+                style="@style/Font14_hui2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立冰补贴" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:background="@color/xian" />
+
+        <LinearLayout
+            android:id="@+id/ll_dianhua"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/Font14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="客服电话" />
+
+            <TextView
+                android:id="@+id/tv_dianhua"
+                style="@style/Font14_hui2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="400-999-319" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:background="@color/xian" />
+
+        <TextView
+            android:id="@+id/tv_fuwutiaokuam"
+            style="@style/Font14"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:drawableRight="@mipmap/icon_youlight"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="服务条款" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        style="@style/Font11_hui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="深圳市宇恒德昆科技有限公司@版权所有" />
+</LinearLayout>

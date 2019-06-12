@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_padding_top"
+        android:background="@color/main" />
+
+    <TextView
+        style="@style/Font17_white"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/main"
+        android:gravity="center"
+        android:text="项目报备" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Font14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="意向成交方式" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp">
+
+                <RadioButton
+                    android:id="@+id/rb_zulin"
+                    style="@style/Font14"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="租赁(分期付款)" />
+
+                <RadioButton
+                    android:id="@+id/rb_gouxiao"
+                    style="@style/Font14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="购销(买卖)" />
+            </RadioGroup>
+
+            <include layout="@layout/xian_4" />
+
+            <LinearLayout
+                android:id="@+id/ll_pinpai"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/Font14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="意向品牌" />
+
+                <TextView
+                    android:id="@+id/tv_pinpai"
+                    style="@style/Font14_hui2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/icon_youlight"
+                    android:gravity="right"
+                    android:hint="请选择(选填)"
+                    android:text="立冰" />
+            </LinearLayout>
+
+            <include layout="@layout/xian_4" />
+
+            <LinearLayout
+                android:id="@+id/ll_xiangmuleixing"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/Font14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="项目类型" />
+
+                <TextView
+                    android:id="@+id/tv_xiangmuleixing"
+                    style="@style/Font14_hui2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/icon_youlight"
+                    android:gravity="right"
+                    android:hint="请选择(选填)" />
+            </LinearLayout>
+
+            <include layout="@layout/xian_4" />
+
+            <LinearLayout
+                android:id="@+id/ll_kongtiaoleixing"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/Font14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="意向空调类型" />
+
+                <TextView
+                    android:id="@+id/tv_kongtialeixing"
+                    style="@style/Font14_hui2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/icon_youlight"
+                    android:gravity="right"
+                    android:hint="请选择(选填)" />
+            </LinearLayout>
+
+            <include layout="@layout/xian_3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/Font14"
+                    android:layout_marginRight="2dp"
+                    android:textColor="@color/red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*" />
+                <TextView
+                    style="@style/Font14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="负责人姓名" />
+
+                <EditText
+                    android:id="@+id/et_yezhuname"
+                    style="@style/Font14_hui2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/white"
+                    android:hint="请输入负责人主姓名(必填)"
+                    android:maxLength="20" />
+            </LinearLayout>
+
+            <include layout="@layout/xian_4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                <TextView
+                    style="@style/Font14"
+                    android:layout_marginRight="2dp"
+                    android:textColor="@color/red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*" />
+                <TextView
+                    style="@style/Font14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="负责人电话" />
+
+                <EditText
+                    android:id="@+id/et_yezhudianhua"
+                    style="@style/Font14_hui2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/white"
+                    android:hint="请输入负责人电话(必填)"
+                    android:inputType="phone"
+                    android:maxLength="11" />
+            </LinearLayout>
+
+            <include layout="@layout/xian_4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                <TextView
+                    style="@style/Font14"
+                    android:layout_marginRight="2dp"
+                    android:textColor="@color/red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*" />
+                <TextView
+                    style="@style/Font14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="项目名称" />
+
+                <EditText
+                    android:id="@+id/et_xiangmuname"
+                    style="@style/Font14_hui2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/white"
+                    android:hint="请输入项目名称(必填)"
+                    android:maxLength="20" />
+            </LinearLayout>
+
+            <include layout="@layout/xian_4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                <TextView
+                    style="@style/Font14"
+                    android:layout_marginRight="2dp"
+                    android:textColor="@color/red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*" />
+                <TextView
+                    style="@style/Font14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="项目面积" />
+
+                <EditText
+                    android:id="@+id/et_mianji"
+                    style="@style/Font14_hui2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="请输入项目面积(必填)"
+                    android:maxLength="10" />
+
+                <TextView
+                    style="@style/Font14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="㎡" />
+            </LinearLayout>
+
+            <include layout="@layout/xian_4" />
+
+            <LinearLayout
+                android:id="@+id/ll_add"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                <TextView
+                    style="@style/Font14"
+                    android:layout_marginRight="2dp"
+                    android:textColor="@color/red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*" />
+                <TextView
+                    style="@style/Font14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="项目地址" />
+
+                <TextView
+                    android:id="@+id/tv_add"
+                    style="@style/Font14_hui2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/icon_youlight"
+                    android:gravity="right"
+                    android:hint="请选择(必填)" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_xxadd"
+                style="@style/Font14_hui2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:hint="请输入项目详细地址(必填)"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true" />
+
+            <include layout="@layout/xian_4" />
+
+            <TextView
+                style="@style/Font14"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="项目信息简要说明" />
+
+            <EditText
+                android:id="@+id/et_miaoshu"
+                style="@style/Font14_hui2"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:gravity="top"
+                android:background="@color/white"
+                android:hint="请输入现场描述说明(选填)"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bt_login"
+        style="@style/Font15_white"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/loginbt"
+        android:text="提交" />
+
+</LinearLayout>

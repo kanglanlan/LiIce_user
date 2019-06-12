@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_que_ren_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.meida.liice.QueRenOrderActivity">
+
+    <include layout="@layout/title" />
+
+    <include layout="@layout/xian_3" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+             android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_tianjiaadd"
+                    style="@style/Font14_hui"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:drawableLeft="@mipmap/ico_lb039"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/icon_youlight"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="请填写收货人信息" />
+
+                <include layout="@layout/info_add" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@mipmap/ico_lb097" />
+
+            <com.meida.MyView.MyListView
+                android:id="@+id/list_item"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:listSelector="@color/white">
+
+            </com.meida.MyView.MyListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    style="@style/Font14_hui2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="配送方式" />
+
+                <TextView
+                    android:id="@+id/tv_peisong"
+                    style="@style/Font14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="送装一体" />
+            </LinearLayout>
+
+            <include layout="@layout/xiantwo" />
+
+            <EditText
+                android:id="@+id/et_beizhu"
+                style="@style/Font13_hui2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/white"
+                android:gravity="top"
+                android:hint="选填：有更多个性化需求，请点击留言(100字以内)"
+                android:maxLength="100"
+                android:padding="10dp" />
+<include layout="@layout/xian_3"/>
+            <LinearLayout
+                android:id="@+id/ll_fuwushang"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/Font14_hui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择配送服务商" />
+
+                <TextView
+                    android:id="@+id/tv_fuwushang"
+                    style="@style/Font14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/icon_youlight"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/bg"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/tv_nums"
+                    style="@style/Font13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共0台商品 小计：" />
+
+                <TextView
+                    android:id="@+id/tv_qian"
+                    style="@style/Font13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+
+            <include layout="@layout/info_zhifu" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <TextView
+            style="@style/Font14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合计：" />
+
+        <TextView
+            android:id="@+id/tv_jiage"
+            style="@style/Font14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0.00"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/tv_zhifu"
+            style="@style/Font14_white"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@color/cheng"
+            android:gravity="center"
+            android:text="去支付" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settingzhifumima"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <com.jungly.gridpasswordview.GridPasswordView
+        android:id="@+id/gpv_dialog_withdraw_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+        app:gpvCornerRadius="3dp"
+        app:gpvLineColor="#999999"
+        app:gpvLineWidth="1px"
+        app:gpvTextColor="@color/black" />
+
+    <TextView
+        style="@style/Font11_hui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="设置6位支付密码，用于余额支付验证" />
+
+
+    <Button
+        android:id="@+id/bt_xiayibu"
+        style="@style/Font15_white"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/loginbt"
+        android:text="下一步" />
+</LinearLayout>

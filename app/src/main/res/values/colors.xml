@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1583E6</color>
+    <color name="colorPrimaryDark">#1583E6</color>
+    <color name="colorAccent">#1D82D2</color>
+    <color name="colorBlue">#1d82d2</color>
+
+
+    <color name="stroke">#cac7c7</color>
+
+
+    <color name="main">#1583E6</color>
+    <color name="red">#ff0000</color>
+    <color name="cheng">#EB5516</color>
+    <color name="org">#ff6300</color>
+    <color name="huibt">#e3e8ee</color>
+    <color name="black">#000000</color>
+    <color name="blackt">#111111</color>
+    <color name="blue">#2180F8</color>
+    <color name="lanzi">#576b95</color>
+    <color name="txthui">#999999</color>
+    <color name="txthui2">#555555</color>
+    <color name="txthui3">#cccccc</color>
+    <color name="bg">#f4f4f4</color>
+    <color name="xian">#e7e7e7</color>
+    <color name="white">#ffffff</color>
+</resources>

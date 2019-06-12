@@ -1,0 +1,221 @@
+<resources>
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Theme.BackgroundTranslucent" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/qd</item>
+        <item name="android:windowFullscreen">?android:windowNoTitle</item>
+
+    </style>
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- popwidnow 显示消失 动画-->
+    <style name="pop_anim_style">
+        <!-- 指定显示的动画xml  -->
+        <item name="android:windowEnterAnimation">@anim/pop_on</item>
+        <!-- 指定消失的动画xml  -->
+        <item name="android:windowExitAnimation">@anim/pop_close</item>
+    </style>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color" format="color"/>
+        <attr name="border_overlay" format="boolean"/>
+    </declare-styleable>
+
+    <style name="Font12">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/blackt</item>
+    </style>
+
+    <style name="Font12_white">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Font12_hui">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/txthui</item>
+    </style>
+
+    <style name="Font12_hui2">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/txthui2</item>
+    </style>
+
+    <style name="Font11_hui2">
+        <item name="android:textSize">11dp</item>
+        <item name="android:textColor">@color/txthui2</item>
+    </style>
+
+    <style name="Font12_main">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/main
+        </item>
+    </style>
+
+    <style name="myself">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/blackt</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Font17">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">@color/blackt</item>
+    </style>
+
+    <style name="Font18">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/blackt</item>
+    </style>
+
+    <style name="Font18_white">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Font18_main">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/main</item>
+    </style>
+
+    <style name="Font13">
+
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/blackt</item>
+    </style>
+
+    <style name="Font13_white">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Font13_hui">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/txthui</item>
+    </style>
+
+    <style name="Font13_main">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/main
+        </item>
+    </style>
+
+    <style name="Font15">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/blackt</item>
+    </style>
+
+    <style name="Font15_white">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Font16_white">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Font17_white">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Font15_hui">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/txthui</item>
+    </style>
+
+    <style name="Font15_main">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/main
+        </item>
+    </style>
+
+    <style name="Font14">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/blackt</item>
+    </style>
+
+    <style name="Font15ta">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/blackt</item>
+    </style>
+
+    <style name="Font16">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/blackt</item>
+    </style>
+
+    <style name="Font14_white">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Font14_hui">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/txthui</item>
+    </style>
+
+    <style name="Font14_hui2">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/txthui2</item>
+    </style>
+
+    <style name="Font13_hui2">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/txthui2</item>
+    </style>
+
+    <style name="Font15_hui2">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/txthui2</item>
+    </style>
+
+    <style name="Font14_main">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/main
+        </item>
+    </style>
+
+    <style name="Font16_main">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/main
+        </item>
+    </style>
+
+    <style name="Font11">
+        <item name="android:textSize">11dp</item>
+        <item name="android:textColor">@color/blackt</item>
+    </style>
+
+    <style name="Font11_white">
+        <item name="android:textSize">11dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Font11_hui">
+        <item name="android:textSize">11dp</item>
+        <item name="android:textColor">@color/txthui</item>
+    </style>
+
+    <style name="Font11_main">
+        <item name="android:textSize">11dp</item>
+        <item name="android:textColor">@color/main
+        </item>
+    </style>
+</resources>

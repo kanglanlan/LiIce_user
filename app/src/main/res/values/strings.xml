@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">立冰补贴</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="qian">¥</string>
+    <string name="error_please_check_network">请检查网络</string>
+    <string name="error_timeout">请求超时，网络不好</string>
+    <string name="error_not_found_server">未发现指定服务器，清切换网络后重试</string>
+    <string name="error_url_error">URL错误</string>
+    <string name="error_not_found_cache">没有找到缓存.</string>
+    <string name="error_system_unsupport_method">系统不支持的请求方法</string>
+    <string name="error_parse_data_error">解析数据时发生错误</string>
+    <string name="error_unknow">网络数据请求失败</string>
+    <string name="error_response_code">服务器响应码%1$d</string>
+    <string name="error_response_code_dex">服务器响应码%1$d，如果你们服务器在这种情况下也返回数据你可以处理</string>
+
+    <string name="camera">请给予相机权限，才能正常使用相机功能</string>
+    <string name="phonecontact">请给予通讯录权限，才能正常使用手机通讯录功能</string>
+    <string name="sd">请给予内存读写权限，才能正常使用该功能</string>
+    <string name="gdmap">请给予相应的权限，才能正常使用高德地图</string>
+    <string name="phone">请给予电话权限，才能正常使用拨打电话功能</string>
+    <string name="address">请给予定位权限，才能正常使用定位和路线规划功能</string>
+    <string name="string_help_text">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。\n\n最后点击两次后退按钮，即可返回。</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

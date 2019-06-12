@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.daimajia.slider.library.SliderLayout xmlns:custom="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/slider_shouye_lunbo"
+                    android:layout_width="match_parent"
+                    android:layout_height="285dp"
+                    android:background="@color/white"
+                    android:focusable="false"
+                    custom:auto_cycle="true"
+                    custom:indicator_visibility="visible"
+                    custom:pager_animation="Default"
+                    custom:pager_animation_span="200" />
+
+                <TextView
+                    android:id="@+id/tv_num"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right|bottom"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/numbg"
+                    android:gravity="center"
+                    android:text="1/8"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:visibility="gone" />
+            </FrameLayout>
+            <include layout="@layout/xian"/>
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/Font15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Font13_hui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="兑换积分：" />
+
+                <TextView
+                    android:id="@+id/tv_duihuanjifen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/red"
+                    android:textSize="17dp" />
+
+                <TextView
+                    style="@style/Font13_hui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="积分" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Font13_hui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="补贴积分：" />
+
+                <TextView
+                    android:id="@+id/tv_butiejifen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/red"
+                    android:textSize="17dp" />
+
+                <TextView
+                    style="@style/Font13_hui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:text="积分" />
+
+                <TextView
+                    android:id="@+id/tv_yiduihuan"
+                    style="@style/Font13_hui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="0人已兑换" />
+            </LinearLayout>
+
+
+            <include layout="@layout/xiantwo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/Font13_hui2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="配送方式" />
+
+                <TextView
+                    android:id="@+id/tv_peisong"
+                    style="@style/Font13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="right"
+                    android:text="免费包邮" />
+            </LinearLayout>
+
+            <include layout="@layout/xian_3" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablayout_mo"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                app:tabGravity="center"
+                app:tabIndicatorColor="@color/main"
+                app:tabIndicatorHeight="2dp"
+                app:tabMinWidth="0dp"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/black"
+                app:tabTextAppearance="@style/Font14"
+                app:tabTextColor="@color/black" />
+
+            <WebView
+                android:id="@+id/web_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></WebView>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_kefu"
+            style="@style/Font12_hui2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ico_lb024"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="客服" />
+
+        <TextView
+            android:id="@+id/tv_shoucang"
+            style="@style/Font12_hui2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ico_lb021"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="收藏" />
+
+        <TextView
+            android:id="@+id/tv_duihuan"
+            style="@style/Font14_white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/cheng"
+            android:gravity="center"
+            android:text="立即兑换" />
+
+        <TextView
+            android:id="@+id/tv_tuiguang"
+            style="@style/Font14_white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/main"
+            android:gravity="center"
+            android:text="推广" />
+    </LinearLayout>
+</LinearLayout>

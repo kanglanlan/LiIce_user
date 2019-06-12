@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/layout_list" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/img_bgr"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/perhei" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/toolbar_padding_top">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            style="@style/Font14_white"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/tv_city"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@mipmap/ico_lb010"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+          />
+
+        <TextView
+            android:id="@+id/tv_ti"
+            style="@style/Font16_white"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="立冰补贴"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/img_xiaoxi"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:padding="11dp"
+            android:src="@mipmap/ico_lb008" />
+    </RelativeLayout>
+</LinearLayout>
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/img_kefu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="15dp"
+        android:padding="2dp"
+        android:src="@mipmap/ico_lb063" />
+
+
+</FrameLayout>
