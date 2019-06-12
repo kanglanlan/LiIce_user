@@ -70,7 +70,6 @@ public class AddBaoXiuActivity extends BaseActivity {
         setContentView(R.layout.activity_add_bao_xiu);
         ButterKnife.bind(this);
         changeTitle("填写报修信息");
-         changeTitle("填写报修信息"); changeTitle("填写报修信息");
         mSelectPathtwo = new ArrayList<String>();
         init();
 //        getadd(1);
