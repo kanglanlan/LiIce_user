@@ -31,7 +31,6 @@ public class AboutusActivity extends BaseActivity {
         setContentView(R.layout.activity_aboutus);
         ButterKnife.bind(this);
         changeTitle("关于我们");
-        changeTitle("gb");
         try {
             tvBanben.setText("立冰补贴商城" + CommonUtil.getVersion(this));
         } catch (Exception e) {
